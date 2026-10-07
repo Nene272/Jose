@@ -1,253 +1,253 @@
-```html
-<!doctype html>
-<html lang="es">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!doctype html>
+    <html lang="es">
 
-    <title>Contacto | NovaTech</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="styles.css">
-</head>
+        <title>Contacto | NovaTech</title>
 
-<body>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-    <!-- ENCABEZADO -->
-    <header>
-        <div class="wrap nav">
+    <body>
 
-            <a class="logo" href="index.html">
-                <b>NT</b> NovaTech
-            </a>
+        <!-- ENCABEZADO -->
+        <header>
+            <div class="wrap nav">
 
-            <button id="menu">☰</button>
+                <a class="logo" href="index.html">
+                    <b>NT</b> NovaTech
+                </a>
 
-            <nav id="nav">
-                <a href="index.html">Inicio</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
+                <button id="menu">☰</button>
 
-        </div>
-    </header>
+                <nav id="nav">
+                    <a href="index.html">Inicio</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
 
-
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
-
-        <!-- SECCIÓN DE CONTACTO -->
-        <section class="page">
-
-            <div class="wrap">
-
-                <small>HABLEMOS</small>
-
-                <h1>Cuéntanos qué necesitas</h1>
-
-                <p>
-                    Completa el formulario y te contactaremos.
-                </p>
+            </div>
+        </header>
 
 
-                <div class="contact">
+        <!-- CONTENIDO PRINCIPAL -->
+        <main>
 
-                    <!-- FORMULARIO -->
-                    <form id="contactForm">
+            <!-- SECCIÓN DE CONTACTO -->
+            <section class="page">
 
-                        <h2>Solicitud de información</h2>
+                <div class="wrap">
+
+                    <small>HABLEMOS</small>
+
+                    <h1>Cuéntanos qué necesitas</h1>
+
+                    <p>
+                        Completa el formulario y te contactaremos.
+                    </p>
 
 
-                        <!-- NOMBRE -->
-                        <label>
-                            Nombre completo
+                    <div class="contact">
 
-                            <input
-                                id="nombre"
-                                type="text"
-                                placeholder="Tu nombre"
+                        <!-- FORMULARIO -->
+                        <form id="contactForm">
+
+                            <h2>Solicitud de información</h2>
+
+
+                            <!-- NOMBRE -->
+                            <label>
+                                Nombre completo
+
+                                <input
+                                    id="nombre"
+                                    type="text"
+                                    placeholder="Tu nombre"
+                                >
+                            </label>
+
+
+                            <!-- CORREO -->
+                            <label>
+                                Correo electrónico
+
+                                <input
+                                    id="email"
+                                    type="email"
+                                    placeholder="nombre@empresa.com"
+                                >
+                            </label>
+
+
+                            <!-- TELÉFONO -->
+                            <label>
+                                Teléfono
+
+                                <input
+                                    id="tel"
+                                    type="text"
+                                    placeholder="809-000-0000"
+                                >
+                            </label>
+
+
+                            <!-- SERVICIO -->
+                            <label>
+                                Servicio
+
+                                <select id="serv">
+
+                                    <option value="">
+                                        Selecciona una opción
+                                    </option>
+
+                                    <option>
+                                        Desarrollo web
+                                    </option>
+
+                                    <option>
+                                        Soporte informático
+                                    </option>
+
+                                    <option>
+                                        Gestión empresarial
+                                    </option>
+
+                                </select>
+                            </label>
+
+
+                            <!-- MENSAJE -->
+                            <label>
+                                Mensaje
+
+                                <textarea
+                                    id="msg"
+                                    placeholder="Describe tu necesidad"
+                                ></textarea>
+                            </label>
+
+
+                            <!-- CONSENTIMIENTO -->
+                            <label class="cons">
+
+                                <input
+                                    id="acepto"
+                                    type="checkbox"
+                                >
+
+                                Acepto que NovaTech utilice estos datos para responder.
+
+                            </label>
+
+
+                            <!-- BOTÓN -->
+                            <button
+                                class="btn"
+                                type="submit"
                             >
-                        </label>
+                                Enviar solicitud
+                            </button>
 
 
-                        <!-- CORREO -->
-                        <label>
-                            Correo electrónico
+                            <!-- RESPUESTA DEL FORMULARIO -->
+                            <p id="respuesta"></p>
 
-                            <input
-                                id="email"
-                                type="email"
-                                placeholder="nombre@empresa.com"
-                            >
-                        </label>
+                        </form>
 
 
-                        <!-- TELÉFONO -->
-                        <label>
-                            Teléfono
+                        <!-- INFORMACIÓN DE CONTACTO -->
+                        <aside>
 
-                            <input
-                                id="tel"
-                                type="text"
-                                placeholder="809-000-0000"
-                            >
-                        </label>
+                            <h3>
+                                También puedes llamarnos
+                            </h3>
 
+                            <p>
+                                <b>809-555-0188</b>
+                            </p>
 
-                        <!-- SERVICIO -->
-                        <label>
-                            Servicio
-
-                            <select id="serv">
-
-                                <option value="">
-                                    Selecciona una opción
-                                </option>
-
-                                <option>
-                                    Desarrollo web
-                                </option>
-
-                                <option>
-                                    Soporte informático
-                                </option>
-
-                                <option>
-                                    Gestión empresarial
-                                </option>
-
-                            </select>
-                        </label>
+                            <p>
+                                Lunes a viernes
+                                <br>
+                                8:00 a.m. – 5:00 p.m.
+                            </p>
 
 
-                        <!-- MENSAJE -->
-                        <label>
-                            Mensaje
+                          <!-- MAPA -->
+<div class="map">
+    <iframe
+        title="Ubicación de la oficina de NovaTech"
+        src="https://www.google.com/maps?q=Santo+Domingo+Oeste,+República+Dominicana&output=embed"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+                        </aside>
 
-                            <textarea
-                                id="msg"
-                                placeholder="Describe tu necesidad"
-                            ></textarea>
-                        </label>
+                    </div>
 
+                </div>
 
-                        <!-- CONSENTIMIENTO -->
-                        <label class="cons">
+            </section>
 
-                            <input
-                                id="acepto"
-                                type="checkbox"
-                            >
-
-                            Acepto que NovaTech utilice estos datos para responder.
-
-                        </label>
-
-
-                        <!-- BOTÓN -->
-                        <button
-                            class="btn"
-                            type="submit"
-                        >
-                            Enviar solicitud
-                        </button>
+        </main>
 
 
-                        <!-- RESPUESTA DEL FORMULARIO -->
-                        <p id="respuesta"></p>
+        <!-- PIE DE PÁGINA -->
+        <footer>
 
-                    </form>
+            <div class="wrap foot">
 
+                <div>
+                    <b>NovaTech</b>
 
-                    <!-- INFORMACIÓN DE CONTACTO -->
-                    <aside>
-
-                        <h3>
-                            También puedes llamarnos
-                        </h3>
-
-                        <p>
-                            <b>809-555-0188</b>
-                        </p>
-
-                        <p>
-                            Lunes a viernes
-                            <br>
-                            8:00 a.m. – 5:00 p.m.
-                        </p>
+                    <p>
+                        Soluciones digitales para empresas.
+                    </p>
+                </div>
 
 
-                        <!-- MAPA -->
-                        <div class="map">
+                <div>
+                    <b>Contacto</b>
 
-                            MAPA
-                            <br>
+                    <p>
+                        info@novatech.test
+                        <br>
+                        809-555-0188
+                    </p>
+                </div>
 
-                            <small>
-                                Ubicación de la oficina
-                            </small>
 
-                        </div>
+                <div>
+                    <b>Horario</b>
 
-                    </aside>
-
+                    <p>
+                        Lun–Vie · 8:00 a.m.–5:00 p.m.
+                    </p>
                 </div>
 
             </div>
 
-        </section>
 
-    </main>
+            <small>
+                © 2026 NovaTech · Sitio de práctica académica
+            </small>
 
-
-    <!-- PIE DE PÁGINA -->
-    <footer>
-
-        <div class="wrap foot">
-
-            <div>
-                <b>NovaTech</b>
-
-                <p>
-                    Soluciones digitales para empresas.
-                </p>
-            </div>
+        </footer>
 
 
-            <div>
-                <b>Contacto</b>
+        <!-- JAVASCRIPT -->
+        <script src="app.js"></script>
 
-                <p>
-                    info@novatech.test
-                    <br>
-                    809-555-0188
-                </p>
-            </div>
+    </body>
 
-
-            <div>
-                <b>Horario</b>
-
-                <p>
-                    Lun–Vie · 8:00 a.m.–5:00 p.m.
-                </p>
-            </div>
-
-        </div>
-
-
-        <small>
-            © 2026 NovaTech · Sitio de práctica académica
-        </small>
-
-    </footer>
-
-
-    <!-- JAVASCRIPT -->
-    <script src="app.js"></script>
-
-</body>
-
-</html>
-```
+    </html>
